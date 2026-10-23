@@ -1,4 +1,4 @@
-require('dotenv').config();
+﻿require('dotenv').config();
 
 module.exports = {
   botName: process.env.BOT_NAME || 'PHIZER MD',
