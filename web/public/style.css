@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #0b0f14;
+  color: #e6edf3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #121821;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+h1 { margin: 0; font-size: 1.8rem; letter-spacing: 1px; }
+.subtitle { color: #8b98a5; margin: 0.25rem 0 1.5rem; }
+.status {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  background: #374151;
+}
+.status.connecting { background: #854d0e; }
+.status.qr { background: #1e40af; }
+.status.connected { background: #166534; }
+.status.disconnected { background: #7f1d1d; }
+.qr-wrap {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.placeholder { color: #374151; font-size: 0.9rem; }
+#qrImage { width: 100%; max-width: 260px; }
+.instructions { text-align: left; margin-bottom: 1.5rem; }
+.instructions h2 { font-size: 1rem; margin-bottom: 0.5rem; }
+.instructions ol { padding-left: 1.2rem; color: #b6c2cf; font-size: 0.9rem; }
+button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover { background: #1d4ed8; }
